@@ -1,26 +1,71 @@
 @import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-white-smoke: var(--white-smoke);
+  --color-dark: var(--dark);
+  --color-blue: var(--blue);
+  --color-light-blue: var(--light-blue);
+  --color-gray: var(--gray);
+  --font-archivo: var(--font-archivo);
+  --font-chivo-mono: var(--font-chivo-mono);
+  --font-sans: var(--font-sans);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+  --shadow-box: var(--shadow-box);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+:root {
+  --white-smoke: #e9f4f9;
+  --dark: #000d12;
+  --blue: #003ace;
+  --light-blue: #00b4fd;
+  --gray: #bbc6cb;
+  --radius: 0.625rem;
+  --shadow-box: 0 1px 30px rgba(0, 0, 0, 0.25);
+}
+
+.bounce-shine {
+  position: relative;
+  color: transparent;
+  background-color: var(--light-blue);
+  background-image: radial-gradient(
+    circle,
+    var(--blue) 0%,
+    var(--light-blue) 30%,
+    transparent 50%
+  );
+  background-size: 180% 180%;
+  background-repeat: no-repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: orb 10s ease-in-out infinite reverse;
+}
+@keyframes orb {
+  0% {
+    background-position: 0% 100%;
   }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  25% {
+    background-position: 50% 50%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  65% {
+    background-position: 100% 50%;
+  }
+  85% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
 }

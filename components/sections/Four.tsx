@@ -6,7 +6,7 @@ import { Check } from "lucide-react";
 import { cn } from "@/lib/utils";
 import ContactUsCard from "../ContactUsCard";
 
-const dis = [
+const content = [
   {
     id: 1,
     title: "Fully compliant with regulatory requirement",
@@ -45,16 +45,37 @@ const dis = [
 export default function SectionFour() {
   return (
     <section className="mt-52.5 pb-28 bg-white-smoke text-dark">
-      <Marquee className="text-5xl font-semibold leading-[120%] py-6 bg-white" autoFill>
-        <Image src="/icons/twinkle.svg" alt="" width={58} height={58} className="mx-8" />
+      <Marquee
+        className="text-5xl font-semibold leading-[120%] py-6 bg-white"
+        autoFill
+      >
+        <Image
+          src="/icons/twinkle.svg"
+          alt=""
+          width={58}
+          height={58}
+          className="mx-8"
+        />
         <span className="bg-linear-to-r from-light-blue to-blue bg-clip-text text-transparent">
           N7
         </span>
-        <Image src="/icons/twinkle.svg" alt="" width={58} height={58} className="mx-8" />
+        <Image
+          src="/icons/twinkle.svg"
+          alt=""
+          width={58}
+          height={58}
+          className="mx-8"
+        />
         <span>Say</span>
         <Image src="/gif/hi.gif" alt="" width={94} height={66} />
         <span>to the new way of banking</span>
-        <Image src="/icons/twinkle.svg" alt="" width={58} height={58} className="mx-8" />
+        <Image
+          src="/icons/twinkle.svg"
+          alt=""
+          width={58}
+          height={58}
+          className="mx-8"
+        />
         <span className="bg-linear-to-r from-light-blue to-blue bg-clip-text text-transparent">
           CB7
         </span>
@@ -84,12 +105,12 @@ export default function SectionFour() {
             <LinkButton>LEARN MORE</LinkButton>
           </div>
           <div>
-            {dis.map((item, index) => (
+            {content.map((item, index) => (
               <div
                 key={item.id}
                 className={cn(
                   item.id % 2 === 0 ? "flex-row-reverse" : "flex-row",
-                  dis.length !== index + 1 ? "mb-28" : "",
+                  content.length !== index + 1 ? "mb-28" : "",
                   "flex w-full gap-x-20",
                 )}
               >

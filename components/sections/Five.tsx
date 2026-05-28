@@ -10,7 +10,6 @@ import {
   CarouselPosition,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { Card, CardContent } from "../ui/card";
 import ContactUsCard from "../ContactUsCard";
 
 const blog = [

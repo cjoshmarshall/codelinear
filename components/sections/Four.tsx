@@ -150,7 +150,7 @@ export default function SectionFour() {
         desc="CB7 helps your financial institution improve the client experience,
                   automate and optimize procedures, simplify banking operations"
         image="/images/section-4-bg-4.png"
-        className="text-white mx-4 sm:mx-auto"
+        className="text-white mx-4"
         imageClassName="w-1/2"
       />
     </section>

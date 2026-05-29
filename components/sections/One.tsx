@@ -13,8 +13,8 @@ const trusted = [
 export default function SectionOne() {
   return (
     <section className="mx-8 md:mx-0 mt-42 lg:mt-52.5">
-      <div className="flex lg:justify-between">
-        <div className="relative md:w-108 xl:w-146 mx-auto  md:mx-12 lg:mx-16 xl:mx-20">          
+      <div className="flex">
+        <div className="relative md:w-108 xl:w-146 mx-auto  md:mx-12 lg:mx-16 xl:mx-20">
           <div className="block md:hidden absolute bg-linear-to-r from-light-blue to-blue blur-[200px] h-full rounded-full w-99.5 left-[45%] -translate-x-1/2" />
           <h1 className="text-4xl lg:text-5xl xl:text-6xl leading-[120%]">
             The new foundation of modern banking
@@ -31,13 +31,15 @@ export default function SectionOne() {
           </div>
         </div>
         <div className="hidden md:flex lg:h-99.5 relative items-center">
-          <div className="absolute bg-linear-to-r from-light-blue to-blue blur-[100px] h-full rounded-full w-99.5 left-[45%] -translate-x-1/2" />
-          <div className="w-120 xl:w-140.5 h-60 xl:h-75.25 relative">
+          <div className="absolute bg-linear-to-r from-light-blue to-blue blur-[100px] h-full rounded-full w-79.5 left-[45%] -translate-x-1/2" />
+          <div className="w-120 lg:w-145.5 h-60 lg:h-75.25 xl:w-170.5 xl:h-90.25 relative">
             <Image src="/images/section-1.png" alt="" fill />
           </div>
         </div>
       </div>
-      <h5 className="mt-12 mx-auto md:mx-12 lg:mx-20 font-light text-gray">Trusted By:</h5>
+      <h5 className="mt-12 mx-auto md:mx-12 lg:mx-20 font-light text-gray">
+        Trusted By:
+      </h5>
       <div className="flex flex-wrap gap-4 mx-auto md:mx-12 lg:mx-20 mt-4">
         {trusted.map((items) => (
           <Image

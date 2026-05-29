@@ -56,7 +56,14 @@ export default function SectionTwo() {
       <div className="mt-20 sm:mt-0 flex-2/3 flex flex-row flex-wrap lg:flex-1 justify-between gap-y-13">
         {banking.map((item) => (
           <div key={item.id} className="w-full sm:w-60 xl:w-72">
-            <Image src={item.icon} alt="" height={42} width={42} />
+            <div className="flex flex-row justify-between items-baseline">
+              <Image src={item.icon} alt="" height={42} width={42} />
+              {item.nbfc ? (
+                <p className="font-chivo-mono text-gray text-xs sm:text-sm">
+                  NBFC
+                </p>
+              ) : undefined}
+            </div>
             <h3 className="mt-6 text-xl xl:text-2xl leading-[120%]">
               {item.title}
             </h3>

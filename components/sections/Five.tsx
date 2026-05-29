@@ -66,7 +66,9 @@ export default function SectionFive() {
                   <h5 className="text-[#2490BB] font-chivo-mono text-xs leading-[120%] uppercase">
                     {item.preTitle}
                   </h5>
-                  <h3 className="text-2xl xl:text-3xl leading-[120%] mt-3">{item.title}</h3>
+                  <h3 className="text-2xl xl:text-3xl leading-[120%] mt-3">
+                    {item.title}
+                  </h3>
                   <div className="text-[#2490BB] flex flex-row gap-4 text-sm leading-[120%] mt-3">
                     <p>{item.author}</p>
                     <p>{item.date}</p>
@@ -80,11 +82,16 @@ export default function SectionFive() {
                 </div>
               </div>
             ) : (
-              <div key={item.id} className="w-full md:w-[280.5px] xl:w-[320.5px] mx-auto md:mx-6 my-10">
+              <div
+                key={item.id}
+                className="w-full md:w-[280.5px] xl:w-[320.5px] mx-auto md:mx-6 my-10"
+              >
                 <h5 className="text-[#2490BB] font-chivo-mono text-xs leading-[120%] uppercase">
                   {item.preTitle}
                 </h5>
-                <h3 className="text-2xl xl:text-3xl leading-[120%] mt-3">{item.title}</h3>
+                <h3 className="text-2xl xl:text-3xl leading-[120%] mt-3">
+                  {item.title}
+                </h3>
                 <div className="text-[#2490BB] flex flex-row gap-4 text-sm leading-[120%] mt-3">
                   <p>{item.author}</p>
                   <p>{item.date}</p>
@@ -98,21 +105,24 @@ export default function SectionFive() {
               </div>
             ),
           )}
-          <LinkButton className="w-full justify-end">
+          <LinkButton className="w-full text-right">
             READ MORE INSIGHTS
           </LinkButton>
         </div>
       </div>
 
+      <h2 className="text-5xl text-center mt-20 lg:mt-36 mb-10">
+        Our Case Studies
+      </h2>
       <Carousel className="flex flex-col items-center overflow-hidden">
         <CarouselContent className="mx-8">
           {Array.from({ length: 4 }).map((_, index) => (
             <CarouselItem
               key={index}
-              className="flex justify-center items-center bg-[#01141B] p-12 rounded-2xl"
+              className="flex justify-center items-center"
             >
-              <div className="flex flex-row gap-12 items-center">
-                <div className="hidden relative w-80 h-74.25">
+              <div className="flex flex-row gap-12 items-center bg-[#01141B] p-12 rounded-2xl">
+                <div className="hidden md:block relative w-80 h-74.25">
                   <Image src={"/images/section-5.png"} alt="" fill />
                 </div>
                 <div className="w-96 md:w-[420.5px]">
@@ -136,8 +146,8 @@ export default function SectionFive() {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <div className="flex flex-row items-center justify-between w-full px-10">
-          <div className="hidden md:block mx-20" />
+        <div className="mt-8 flex flex-row items-center justify-between w-full px-10">
+          <div className="hidden md:block mx-16" />
           <div className="flex flex-row items-center gap-4">
             <CarouselPrevious />
             <CarouselPosition count={4} />

@@ -13,12 +13,16 @@ export default function LinkButton({
     <Link
       href="/"
       className={cn(
-        "flex items-center gap-2 font-chivo-mono text-xs lg:text-sm text-light-blue",
+        "group font-chivo-mono text-xs lg:text-sm text-light-blue",
         className,
       )}
     >
-      {children}
-      <ArrowRight height={20}/>
+      <span className=" relative inline-block after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-current after:transition-all after:duration-300 group-hover:after:w-full">
+        <span className="flex flex-row gap-2  items-center">
+          {children}
+          <ArrowRight height={20} />
+        </span>
+      </span>
     </Link>
   );
 }

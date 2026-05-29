@@ -27,13 +27,13 @@ const list2 = [
 
 export default function SectionThree() {
   return (
-    <section className="mt-33.5">
+    <section className="mx-8 sm:mx-0 mt-20 sm:mt-33.5">
       <div className="relative overflow-hidden">
-        <div className="w-146 mx-12 xl:mx-20 mt-36 absolute">
+        <div className="w-full sm:w-146 mx-auto sm:mx-12 xl:mx-20 mt-20 sm:mt-36 sm:absolute">
           <h2 className="text-4xl xl:text-5xl leading-[120%]">
             A complete cloud-based core banking.
           </h2>
-          <p className="text-sm xl:text-base leading-[130%] mt-4 w-89 font-light text-gray">
+          <p className="text-sm xl:text-base leading-[130%] mt-4 w-full sm:w-89 font-light text-gray">
             Faster time to market with our cloud-based core banking services
           </p>
           <div className="mt-8 mb-4">
@@ -41,15 +41,15 @@ export default function SectionThree() {
           </div>
           <LinkButton>LEARN MORE</LinkButton>
         </div>
-        <div className="relative -right-4/7 top-0 w-180 h-140">
+        <div className="hidden sm:block relative -right-4/7 top-0 w-180 h-140">
           <Image src="/images/section-3.png" alt="" fill />
         </div>
       </div>
       <div className="relative overflow-hidden">
-        <div className="relative w-180 h-140 right-3/11">
+        <div className="hidden sm:block relative w-180 h-140 right-3/11">
           <Image src="/images/section-3.png" alt="" fill />
         </div>
-        <div className="w-146 mx-12 xl:mx-20 mt-36 absolute top-0 right-0">
+        <div className="w-full sm:w-146 mx-auto sm:mx-12 xl:mx-20 mt-20 sm:mt-36 sm:absolute sm:top-0 sm:right-0">
           <h4 className="text-3xl leading-[120%]">
             Run a more efficient, flexible,and digitally connected corebanking
             system

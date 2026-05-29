@@ -13,7 +13,7 @@ export default function LinkButton({
     <Link
       href="/"
       className={cn(
-        "flex items-center gap-2 font-chivo-mono text-sm text-light-blue",
+        "flex items-center gap-2 font-chivo-mono text-xs lg:text-sm text-light-blue",
         className,
       )}
     >

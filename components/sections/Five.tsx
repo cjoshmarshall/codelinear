@@ -42,8 +42,8 @@ export default function SectionFive() {
   return (
     <section className="mt-33.5">
       <div className="flex flex-row">
-        <div className="flex flex-col w-115.75 mx-20 flex-[35%]">
-          <h2 className="text-4xl leading-[120%]">
+        <div className="flex flex-col w-115.75 mx-16 xl:mx-20 flex-[35%]">
+          <h2 className="text-3xl xl:text-4xl leading-[120%]">
             Get yourself up-to-speed on all the things happening in fintech
           </h2>
           <div className="mt-8 mb-4">
@@ -52,7 +52,7 @@ export default function SectionFive() {
             </Button>
           </div>
         </div>
-        <div className="flex flex-row flex-wrap gap-x-4 gap-y-8 mx-8 flex-[60%] justify-center">
+        <div className="flex flex-row flex-wrap gap-x-4 gap-y-8 mx-4 xl:mx-8 flex-[60%] justify-center">
           {blog.map((item, index) =>
             index + 1 === 1 ? (
               <div
@@ -66,7 +66,7 @@ export default function SectionFive() {
                   <h5 className="text-[#2490BB] font-chivo-mono text-xs leading-[120%] uppercase">
                     {item.preTitle}
                   </h5>
-                  <h3 className="text-3xl leading-[120%] mt-3">{item.title}</h3>
+                  <h3 className="text-2xl xl:text-3xl leading-[120%] mt-3">{item.title}</h3>
                   <div className="text-[#2490BB] flex flex-row gap-4 text-sm leading-[120%] mt-3">
                     <p>{item.author}</p>
                     <p>{item.date}</p>
@@ -80,11 +80,11 @@ export default function SectionFive() {
                 </div>
               </div>
             ) : (
-              <div key={item.id} className="w-[320.5px] mx-6 my-10">
+              <div key={item.id} className="w-[280.5px] xl:w-[320.5px] mx-6 my-10">
                 <h5 className="text-[#2490BB] font-chivo-mono text-xs leading-[120%] uppercase">
                   {item.preTitle}
                 </h5>
-                <h3 className="text-3xl leading-[120%] mt-3">{item.title}</h3>
+                <h3 className="text-2xl xl:text-3xl leading-[120%] mt-3">{item.title}</h3>
                 <div className="text-[#2490BB] flex flex-row gap-4 text-sm leading-[120%] mt-3">
                   <p>{item.author}</p>
                   <p>{item.date}</p>

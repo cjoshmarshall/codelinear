@@ -90,12 +90,12 @@ export default function SectionFour() {
         <div className="h-200 w-100 top-[65%] absolute right-0">
           <Image src="/images/section-4-bg-3.png" alt="" fill />
         </div>
-        <div className="flex flex-row my-32 pl-20 pr-32 w-full justify-between">
-          <div className="flex flex-col w-109.5 z-10">
-            <h2 className="text-5xl leading-[120%]">
+        <div className="flex flex-row my-32 pl-16 xl:pl-20 pr-16 xl:pr-32 w-full justify-between">
+          <div className="flex flex-col w-96 xl:w-109.5 z-10">
+            <h2 className="text-4xl xl:text-5xl leading-[120%]">
               Digital banking out-of-the-box
             </h2>
-            <p className="text-base leading-[130%] mt-8 w-115.5 font-light text-gray-800">
+            <p className="text-sm xl:text-base leading-[130%] mt-8  w-96 xl:w-115.5 font-light text-gray-800">
               N7 helps your financial institution improve the client experience,
               automate and optimize procedures
             </p>
@@ -111,10 +111,10 @@ export default function SectionFour() {
                 className={cn(
                   item.id % 2 === 0 ? "flex-row-reverse" : "flex-row",
                   content.length !== index + 1 ? "mb-28" : "",
-                  "flex w-full gap-x-20",
+                  "flex w-full gap-x-8 xl:gap-x-20",
                 )}
               >
-                <div className="w-67 h-135.5 relative">
+                <div className="w-48 xl:w-67 h-96 xl:h-135.5 relative">
                   <Image src={item.image} alt="" fill />
                 </div>
                 <div className="flex flex-row flex-wrap flex-1 justify-between gap-y-13">

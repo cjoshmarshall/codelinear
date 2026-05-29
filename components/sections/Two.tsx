@@ -42,10 +42,10 @@ const banking = [
 
 export default function SectionTwo() {
   return (
-    <section className="flex flex-row mx-20 mt-37">
+    <section className="flex flex-row mx-12 xl:mx-20 mt-37">
       <div className="flex-1">
-        <div className="w-108.25">
-          <h3 className="text-4xl leading-[120%]">
+        <div className="w-96 xl:w-108.25">
+          <h3 className="text-3xl xl:text-4xl leading-[120%]">
             All of our solutions are tailor-made to your needs
           </h3>
           <Button variant="secondary" size="lg" className="mt-12">
@@ -55,10 +55,10 @@ export default function SectionTwo() {
       </div>
       <div className="flex flex-row flex-wrap flex-1 justify-between gap-y-13">
         {banking.map((item) => (
-          <div key={item.id} className="w-72">
+          <div key={item.id} className="w-60 xl:w-72">
             <Image src={item.icon} alt="" height={42} width={42} />
-            <h3 className="mt-6 text-2xl leading-[120%]">{item.title}</h3>
-            <p className="mt-8 mb-6 leading-[130%] text-gray">{item.desc}</p>
+            <h3 className="mt-6 text-xl xl:text-2xl leading-[120%]">{item.title}</h3>
+            <p className="mt-8 mb-6 text-sm xl:text-base leading-[130%] text-gray">{item.desc}</p>
             <LinkButton>LEARN MORE</LinkButton>
           </div>
         ))}

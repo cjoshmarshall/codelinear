@@ -14,7 +14,8 @@ export default function SectionOne() {
   return (
     <section className="mx-8 md:mx-0 mt-42 lg:mt-52.5">
       <div className="flex lg:justify-between">
-        <div className="md:w-108 xl:w-146 mx-auto  md:mx-12 lg:mx-16 xl:mx-20">
+        <div className="relative md:w-108 xl:w-146 mx-auto  md:mx-12 lg:mx-16 xl:mx-20">          
+          <div className="absolute bg-linear-to-r from-light-blue to-blue blur-[200px] h-full rounded-full w-99.5 left-[45%] -translate-x-1/2" />
           <h1 className="text-4xl lg:text-5xl xl:text-6xl leading-[120%]">
             The new foundation of modern banking
           </h1>

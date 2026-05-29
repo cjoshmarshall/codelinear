@@ -40,9 +40,9 @@ const blog = [
 ];
 export default function SectionFive() {
   return (
-    <section className="mt-20 sm:mt-33.5">
-      <div className="mx-8 sm:mx-auto flex flex-col sm:flex-row">
-        <div className="flex flex-col w-full sm:w-115.75 mx-auto sm:mx-16 xl:mx-20 flex-[35%]">
+    <section className="mt-20 md:mt-33.5">
+      <div className="mx-8 md:mx-auto flex flex-col md:flex-row">
+        <div className="flex flex-col w-full md:w-115.75 mx-auto md:mx-16 xl:mx-20 flex-[35%]">
           <h2 className="text-3xl xl:text-4xl leading-[120%]">
             Get yourself up-to-speed on all the things happening in fintech
           </h2>
@@ -52,17 +52,17 @@ export default function SectionFive() {
             </Button>
           </div>
         </div>
-        <div className="flex flex-col sm:flex-row flex-wrap gap-x-4 gap-y-8 mx-auto sm:mx-4 xl:mx-8 flex-[60%] justify-center">
+        <div className="flex flex-col md:flex-row flex-wrap gap-x-4 gap-y-8 mx-auto md:mx-4 xl:mx-8 flex-[60%] justify-center">
           {blog.map((item, index) =>
             index + 1 === 1 ? (
               <div
                 key={item.id}
                 className="flex flex-row gap-12 my-10 items-center"
               >
-                <div className="hidden sm:block relative w-80 h-74.25">
+                <div className="hidden md:block relative w-80 h-74.25">
                   <Image src={item.image} alt="" fill />
                 </div>
-                <div className="w-full sm:w-[320.5px]">
+                <div className="w-full md:w-[320.5px]">
                   <h5 className="text-[#2490BB] font-chivo-mono text-xs leading-[120%] uppercase">
                     {item.preTitle}
                   </h5>
@@ -80,7 +80,7 @@ export default function SectionFive() {
                 </div>
               </div>
             ) : (
-              <div key={item.id} className="w-full sm:w-[280.5px] xl:w-[320.5px] mx-auto sm:mx-6 my-10">
+              <div key={item.id} className="w-full md:w-[280.5px] xl:w-[320.5px] mx-auto md:mx-6 my-10">
                 <h5 className="text-[#2490BB] font-chivo-mono text-xs leading-[120%] uppercase">
                   {item.preTitle}
                 </h5>
@@ -115,7 +115,7 @@ export default function SectionFive() {
                 <div className="hidden relative w-80 h-74.25">
                   <Image src={"/images/section-5.png"} alt="" fill />
                 </div>
-                <div className="w-96 sm:w-[420.5px]">
+                <div className="w-96 md:w-[420.5px]">
                   <h5 className="text-[#2490BB] font-chivo-mono text-xs leading-[120%] uppercase">
                     getting started
                   </h5>
@@ -137,7 +137,7 @@ export default function SectionFive() {
           ))}
         </CarouselContent>
         <div className="flex flex-row items-center justify-between w-full px-10">
-          <div className="hidden sm:block mx-20" />
+          <div className="hidden md:block mx-20" />
           <div className="flex flex-row items-center gap-4">
             <CarouselPrevious />
             <CarouselPosition count={4} />

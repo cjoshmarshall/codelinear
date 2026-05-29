@@ -61,7 +61,7 @@ const links = [
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col sm:flex-row mx-8 sm:mx-12 gap-12 xl:gap-0 xl:justify-between">
+    <footer className="flex flex-col md:flex-row mx-8 md:mx-12 gap-12 xl:gap-0 xl:justify-between">
       <AnimatedShinyText className="text-[200px] lg:text-[280px] xl:text-[338.3px] font-semibold leading-[80%]">
         N7
       </AnimatedShinyText>
@@ -91,7 +91,7 @@ export default function Footer() {
             </div>
           ))}
         </div>
-        <p className="text-sm text-gray-500 mb-12 w-full sm:w-xl xl:w-3xl">
+        <p className="text-sm text-gray-500 mb-12 w-full md:w-xl xl:w-3xl">
           Copyright © 2022 by Linktia Infosystems Limited — &#91;CB7 and N7 as
           Commercial Brand&#93; — &#91;Registered under the Companies Act 2006
           in England and Wales | Number of Incorporation 13100992&#93;

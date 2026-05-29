@@ -18,7 +18,7 @@ export default function ContactUsCard({
   return (
     <div
       className={cn(
-        "py-16 sm:py-28 relative overflow-hidden mx-auto sm:mx-16 xl:mx-20 flex flex-col sm:flex-row items-center bg-linear-to-r from-[#031E2A] to-[#000D12] rounded-3xl",
+        "py-16 md:py-28 relative overflow-hidden mx-auto md:mx-16 xl:mx-20 flex flex-col md:flex-row items-center bg-linear-to-r from-[#031E2A] to-[#000D12] rounded-3xl",
         className,
       )}
     >
@@ -28,7 +28,7 @@ export default function ContactUsCard({
           {desc}
         </p>
       </div>
-      <div className="flex flex-col sm:flex-row w-full sm:w-auto px-8 sm:px-0 mt-13 mx-8 gap-5 z-10 flex-1/2">
+      <div className="flex flex-col md:flex-row w-full md:w-auto px-8 md:px-0 mt-13 mx-8 gap-5 z-10 flex-1/2">
         <Button variant="secondary" size={"lg"}>
           CONTACT US
         </Button>

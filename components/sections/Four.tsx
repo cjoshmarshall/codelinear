@@ -44,9 +44,9 @@ const content = [
 
 export default function SectionFour() {
   return (
-    <section className="mt-20 sm:mt-52.5 pb-28 bg-white-smoke text-dark">
+    <section className="mt-20 md:mt-52.5 pb-28 bg-white-smoke text-dark">
       <Marquee
-        className="text-3xl sm:text-5xl font-semibold leading-[120%] py-6 bg-white"
+        className="text-3xl md:text-5xl font-semibold leading-[120%] py-6 bg-white"
         autoFill
       >
         <Image
@@ -80,17 +80,17 @@ export default function SectionFour() {
           CB7
         </span>
       </Marquee>
-      <div className="mx-8 sm:mx-auto relative">
-        <div className="hidden sm:block w-186 h-100 -top-10 absolute right-1/4">
+      <div className="mx-8 md:mx-auto relative">
+        <div className="hidden md:block w-186 h-100 -top-10 absolute right-1/4">
           <Image src="/images/section-4-bg-1.png" alt="" fill />
         </div>
-        <div className="h-311.25 w-100 top-1/5 absolute -left-10 sm:left-0">
+        <div className="h-311.25 w-100 top-1/5 absolute -left-10 md:left-0">
           <Image src="/images/section-4-bg-2.png" alt="" fill />
         </div>
-        <div className="hidden sm:block h-200 w-100 top-[65%] absolute right-0">
+        <div className="hidden md:block h-200 w-100 top-[65%] absolute right-0">
           <Image src="/images/section-4-bg-3.png" alt="" fill />
         </div>
-        <div className="flex flex-col sm:flex-row my-32 sm:pl-16 xl:pl-20 sm:pr-16 xl:pr-32 w-full justify-between">
+        <div className="flex flex-col md:flex-row my-32 md:pl-16 xl:pl-20 md:pr-16 xl:pr-32 w-full justify-between">
           <div className="flex flex-col w-96 xl:w-109.5 z-10">
             <h2 className="text-4xl xl:text-5xl leading-[120%]">
               Digital banking out-of-the-box
@@ -110,15 +110,15 @@ export default function SectionFour() {
                 key={item.id}
                 className={cn(
                   item.id % 2 === 0 ? "flex-row-reverse" : "flex-row",
-                  content.length !== index + 1 ? "mb-12 sm:mb-28" : "",
+                  content.length !== index + 1 ? "mb-12 md:mb-28" : "",
                   "flex w-full gap-x-8 xl:gap-x-20",
                 )}
               >
-                <div className="hidden sm:block w-48 xl:w-67 h-96 xl:h-135.5 relative">
+                <div className="hidden md:block w-48 xl:w-67 h-96 xl:h-135.5 relative">
                   <Image src={item.image} alt="" fill />
                 </div>
                 <div className="flex flex-row flex-wrap flex-1 justify-between gap-y-13">
-                  <div className="sm:w-72">
+                  <div className="md:w-72">
                     <h3 className="mt-6 text-xl font-semibold leading-[120%]">
                       {item.title}
                     </h3>

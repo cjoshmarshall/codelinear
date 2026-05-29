@@ -42,7 +42,7 @@ const banking = [
 
 export default function SectionTwo() {
   return (
-    <section className="flex flex-col sm:flex-row mx-8 sm:mx-12 xl:mx-20 mt-37">
+    <section className="flex flex-col md:flex-row mx-8 md:mx-12 xl:mx-20 mt-37">
       <div className="flex-1/2 lg:flex-1">
         <div className="w-72 lg:w-96 xl:w-108.25">
           <h3 className="text-2xl lg:text-3xl xl:text-4xl leading-[120%]">
@@ -53,13 +53,13 @@ export default function SectionTwo() {
           </Button>
         </div>
       </div>
-      <div className="mt-20 sm:mt-0 flex-2/3 flex flex-row flex-wrap lg:flex-1 justify-between gap-y-13">
+      <div className="mt-20 md:mt-0 flex-2/3 flex flex-row flex-wrap lg:flex-1 justify-between gap-y-13">
         {banking.map((item) => (
-          <div key={item.id} className="w-full sm:w-60 xl:w-72">
+          <div key={item.id} className="w-full md:w-60 xl:w-72">
             <div className="flex flex-row justify-between items-baseline">
               <Image src={item.icon} alt="" height={42} width={42} />
               {item.nbfc ? (
-                <p className="font-chivo-mono text-gray text-xs sm:text-sm">
+                <p className="font-chivo-mono text-gray text-xs md:text-sm">
                   NBFC
                 </p>
               ) : undefined}

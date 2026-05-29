@@ -9,7 +9,7 @@ export default function Navbar() {
         <li className="cursor-pointer">RESOURCES</li>
         <li className="cursor-pointer">ABOUT US</li>
       </ul>
-      <Button variant="secondary" size="sm" className="hidden md:block">
+      <Button variant="secondary" className="hidden md:block">
         REQUEST DEMO
       </Button>
     </nav>

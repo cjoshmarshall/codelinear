@@ -28,8 +28,8 @@ const list2 = [
 export default function SectionThree() {
   return (
     <section className="mx-8 md:mx-0 mt-20 md:mt-33.5">
-      <div className="relative overflow-hidden">
-        <div className="w-full md:w-146 mx-auto md:mx-12 xl:mx-20 mt-20 md:mt-36 md:absolute">
+      <div className="relative overflow-hidden flex flex-row">
+        <div className="w-full md:w-146 mx-auto md:mx-12 xl:mx-20 mt-20 mb-10 md:mt-28 xl:mt-36 flex-1/2">
           <h2 className="text-4xl xl:text-5xl leading-[120%]">
             A complete cloud-based core banking.
           </h2>
@@ -41,15 +41,17 @@ export default function SectionThree() {
           </div>
           <LinkButton>LEARN MORE</LinkButton>
         </div>
-        <div className="hidden md:block relative -right-4/7 top-0 w-180 h-140">
+        <div className="flex-0 md:flex-1/2" />
+        <div className="absolute hidden md:block w-160 h-120 xl:w-180 xl:h-140 -right-1/6">
           <Image src="/images/section-3.png" alt="" fill />
         </div>
       </div>
-      <div className="relative overflow-hidden">
-        <div className="hidden md:block relative w-180 h-140 right-3/11">
+      <div className="relative overflow-hidden flex flex-row">
+        <div className="absolute hidden md:block w-160 h-120 xl:w-180 xl:h-140 -left-1/6">
           <Image src="/images/section-3.png" alt="" fill />
         </div>
-        <div className="w-full md:w-146 mx-auto md:mx-12 xl:mx-20 mt-20 md:mt-36 md:absolute md:top-0 md:right-0">
+        <div className="flex-0 md:flex-1/2" />
+        <div className="w-full flex-1/2 md:w-146 mx-auto md:mx-12 xl:mx-20 mt-20 mb-10 md:mt-28 xl:mt-36">
           <h4 className="text-3xl leading-[120%]">
             Run a more efficient, flexible,and digitally connected corebanking
             system
@@ -91,7 +93,7 @@ export default function SectionThree() {
         desc="CB7 helps your financial institution improve the client experience,
             automate and optimize procedures, simplify banking operations"
         image="/images/section-3-bg.png"
-        className="mt-48"
+        className="mt-24 sm:mt-48"
       />
     </section>
   );

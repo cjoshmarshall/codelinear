@@ -90,7 +90,7 @@ export default function SectionFour() {
         <div className="hidden md:block h-200 w-100 top-[65%] absolute right-0">
           <Image src="/images/section-4-bg-3.png" alt="" fill />
         </div>
-        <div className="flex flex-col md:flex-row my-32 md:pl-16 xl:pl-20 md:pr-16 xl:pr-32 w-full justify-between">
+        <div className="flex flex-col md:flex-row my-20 md:my-32 md:pl-16 xl:pl-20 md:pr-16 xl:pr-32 w-full justify-between">
           <div className="flex flex-col w-96 xl:w-109.5 z-10">
             <h2 className="text-4xl xl:text-5xl leading-[120%]">
               Digital banking out-of-the-box

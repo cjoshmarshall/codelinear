@@ -68,7 +68,7 @@ export default function Footer() {
       <div className="min-w-0">
         <div className="flex flex-row flex-wrap gap-8 mb-28">
           {offices.map((item) => (
-            <div key={item.id} className="flex flex-col w-64">
+            <div key={item.id} className="flex flex-col sm::w-64">
               <h5 className="leading-[130%]">{item.city}</h5>
               <p className="leading-[130%] mt-4 text-gray-400">
                 {item.address}
@@ -76,12 +76,12 @@ export default function Footer() {
             </div>
           ))}
         </div>
-        <div className="flex flex-row flex-wrap gap-8 mb-20">
+        <div className="flex flex-row flex-wrap gap-16 sm:gap-8 mb-20">
           {links.map((item) => (
-            <div key={item.id} className="flex flex-col w-64">
+            <div key={item.id} className="flex flex-col md:w-64">
               <h5 className="leading-[130%]">{item.title}</h5>
               {item.links.map((link) => (
-                <ul key={link.id}>
+                <ul key={link.id} className="w-fit md:w-auto">
                   <li className="flex flex-row justify-between leading-[130%] mt-4 text-gray-400 w-44">
                     {link.title}
                     <ArrowRight height={16} className="text-light-blue" />
